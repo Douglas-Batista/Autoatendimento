@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "836327830786",
+    "firebase_url": "https://cardapiodigital-32fca.firebaseio.com",
+    "project_id": "cardapiodigital-32fca",
+    "storage_bucket": "cardapiodigital-32fca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836327830786:android:4ce677bf11a505a7",
+        "android_client_info": {
+          "package_name": "comdouglas_batista.github.cardapiodigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836327830786-5vdbfmg7qrlau9os78shf5m8s8upnpcr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "comdouglas_batista.github.cardapiodigital",
+            "certificate_hash": "2572392ff2aa30534db0ab4306681dc6ab560911"
+          }
+        },
+        {
+          "client_id": "836327830786-k5kiq1en9s5ij7l5510a1lkm3l3dutck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5zRx1L2u6ueMGJT5pbwa7e7NhuigOxEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836327830786-k5kiq1en9s5ij7l5510a1lkm3l3dutck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

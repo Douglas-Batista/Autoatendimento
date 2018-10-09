@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">Cardapio Digital</string>
+    <string name="cliente">Menu</string>
+</resources>
