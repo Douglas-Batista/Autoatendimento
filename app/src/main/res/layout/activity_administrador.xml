@@ -21,10 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="255dp"
+        android:layout_marginTop="228dp"
         android:layout_marginEnd="8dp"
         android:text="Gerenciar pratos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,11 +34,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="8dp"
         android:text="Gerenciar mesa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdicionarPra" />
+
+    <Button
+        android:id="@+id/btnAdicionarPra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="Adicionar Prato"
+        app:layout_constraintEnd_toEndOf="@+id/btnPratos"
         app:layout_constraintTop_toBottomOf="@+id/btnPratos" />
 
 </android.support.constraint.ConstraintLayout>

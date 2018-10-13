@@ -23,7 +23,8 @@
         <activity android:name=".AdministrarMesas" />
         <activity android:name=".GerenciarPratos" />
         <activity android:name=".Administrador" />
-        <activity android:name=".AdicionarPrato"></activity>
+        <activity android:name=".AdicionarPrato" />
+        <activity android:name=".AtualizarExcluir"></activity>
     </application>
 
 </manifest>

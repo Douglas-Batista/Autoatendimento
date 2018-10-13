@@ -11,6 +11,7 @@ public class Administrador extends Activity {
     private Button fila;
     private Button mesa;
     private Button pratos;
+    private Button adicionar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class Administrador extends Activity {
         fila = (Button) findViewById(R.id.btnFila);
         mesa = (Button) findViewById(R.id.btnMesa);
         pratos = (Button) findViewById(R.id.btnPratos);
+        adicionar = (Button) findViewById(R.id.btnAdicionarPra);
 
         fila.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +44,13 @@ public class Administrador extends Activity {
             public void onClick(View v) {
                 Intent gemPratos = new Intent(Administrador.this, GerenciarPratos.class);
                 startActivity(gemPratos);
+            }
+        });
+        adicionar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent adiPrato = new Intent(Administrador.this, AdicionarPrato.class);
+                startActivity(adiPrato);
             }
         });
     }
