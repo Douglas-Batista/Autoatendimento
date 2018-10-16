@@ -11,7 +11,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar13"
         android:layout_width="416dp"
-        android:layout_height="13dp"
+        android:layout_height="6dp"
         android:background="#935747"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -21,7 +21,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar14"
         android:layout_width="416dp"
-        android:layout_height="13dp"
+        android:layout_height="6dp"
         android:background="#935747"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -31,7 +31,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar15"
         android:layout_width="416dp"
-        android:layout_height="13dp"
+        android:layout_height="6dp"
         android:background="#935747"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -41,7 +41,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar11"
         android:layout_width="416dp"
-        android:layout_height="13dp"
+        android:layout_height="6dp"
         android:background="#935747"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -51,7 +51,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar12"
         android:layout_width="416dp"
-        android:layout_height="13dp"
+        android:layout_height="6dp"
         android:background="#935747"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -59,7 +59,7 @@
         tools:layout_editor_absoluteY="241dp" />
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar4"
+        android:id="@+id/toolbarfp"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -73,11 +73,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar9"
+        android:id="@+id/toolbarlin"
         android:layout_width="416dp"
-        android:layout_height="13dp"
+        android:layout_height="7dp"
         android:background="#935747"
-        android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="109dp" />
