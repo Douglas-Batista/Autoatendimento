@@ -29,6 +29,12 @@
         <activity android:name=".GerenciarPratos" />
         <activity android:name=".Administrador" />
         <activity android:name=".AdicionarPrato"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
     </application>
 
 </manifest>

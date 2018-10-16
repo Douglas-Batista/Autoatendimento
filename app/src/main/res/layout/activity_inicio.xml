@@ -57,36 +57,6 @@
         app:layout_constraintVertical_bias="0.089" />
 
     <EditText
-        android:id="@+id/mesa"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Digite o numero da mesa"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/pinusu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/pinusu"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="7dp"
-        android:ems="10"
-        android:hint="Digite o PIN"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btnUsuario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/pinadm"
         android:layout_width="222dp"
         android:layout_height="wrap_content"
@@ -104,16 +74,15 @@
         android:id="@+id/txtusuario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Acessar como usuario"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/mesa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="197dp" />
 
     <TextView
         android:id="@+id/txtadm"
