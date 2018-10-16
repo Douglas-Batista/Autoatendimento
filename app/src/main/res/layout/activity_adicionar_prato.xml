@@ -7,43 +7,6 @@
     tools:context=".AdicionarPrato">
 
     <EditText
-        android:id="@+id/numPrato"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="Numero do prato"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/NomeP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/addMesa2"
-        android:layout_width="382dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="#B86A56"
-        android:text="Incluir Prato"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
         android:id="@+id/NomeP"
         android:layout_width="323dp"
         android:layout_height="25dp"
@@ -63,17 +26,21 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/SelImagem"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnAddPedido"
+        android:layout_width="382dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="242dp"
-        android:layout_marginBottom="16dp"
-        android:text="Selecionar imagem do prato"
-        app:layout_constraintBottom_toTopOf="@+id/numPrato"
-        app:layout_constraintStart_toStartOf="@+id/imagemPrato"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="#B86A56"
+        android:text="Incluir Prato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/numPrato"
@@ -97,33 +64,38 @@
     <EditText
         android:id="@+id/IngredientesP"
         android:layout_width="323dp"
-        android:layout_height="109dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="331dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="71dp"
         android:background="#E3E3E3"
         android:ems="10"
         android:hint="Ingrediente"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/SelImagem"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:text="Selecionar imagem do prato"
         app:layout_constraintBottom_toTopOf="@+id/numPrato"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemPrato" />
 
     <EditText
         android:id="@+id/PrecoP"
@@ -139,7 +111,7 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/addMesa2"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,19 +120,16 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="199dp"
+        android:id="@+id/imagemPrato"
+        android:layout_width="233dp"
         android:layout_height="146dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/SelImagem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -176,15 +145,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SelImagem"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/SelImagem" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Nome do Prato:"
         android:textColor="#000"
@@ -192,8 +159,7 @@
         app:layout_constraintBottom_toTopOf="@+id/NomeP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numPrato" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
