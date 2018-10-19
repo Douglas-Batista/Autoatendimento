@@ -98,7 +98,9 @@
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUsuario"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="270dp" />
 
