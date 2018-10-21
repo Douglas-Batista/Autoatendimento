@@ -31,11 +31,15 @@ dependencies {
     implementation 'com.android.support:cardview-v7:28.0.0'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     implementation 'com.google.firebase:firebase-database:16.0.3'
 >>>>>>> adicionar prato ao firebase correção
 =======
     implementation 'com.google.firebase:firebase-database:16.0.3'
 >>>>>>> tela adicionar prato pronta
+=======
+    implementation 'com.google.firebase:firebase-database:16.0.3'
+>>>>>>> adicionar prato, pronto
 }
 apply plugin: 'com.google.gms.google-services'
