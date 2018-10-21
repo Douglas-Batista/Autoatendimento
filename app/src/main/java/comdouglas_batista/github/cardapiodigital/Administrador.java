@@ -17,7 +17,7 @@ public class Administrador extends Activity {
 
         Button fila = (Button) findViewById(R.id.btnFila);
         Button mesa = (Button) findViewById(R.id.btnMesa);
-        Button pratos = (Button) findViewById(R.id.btnPratos);
+        Button pratos = (Button) findViewById(R.id.btnEditPratos);
         Button addpratos = (Button) findViewById(R.id.btnAddPrato);
 
 
