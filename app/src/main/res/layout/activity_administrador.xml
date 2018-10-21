@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F0F0"
     tools:context=".Administrador">
 
     <Button
@@ -21,7 +22,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/btnPratos"
+        android:id="@+id/btnAddPrato"
         android:layout_width="202dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -64,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEditPratos"
         android:layout_width="202dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -77,7 +78,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPratos"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPrato"
         app:layout_constraintVertical_bias="0.0" />
 
     <android.support.v7.widget.Toolbar
@@ -111,20 +112,5 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnAddPrato"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Adicionar prato"
-        app:layout_constraintBottom_toTopOf="@+id/btnFila"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
 
 </android.support.constraint.ConstraintLayout>
