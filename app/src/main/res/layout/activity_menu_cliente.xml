@@ -12,6 +12,7 @@
         android:layout_width="385dp"
         android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -28,6 +29,8 @@
         android:layout_height="149dp"
 =======
 >>>>>>> adicionar prato ao firebase correção
+=======
+>>>>>>> tela adicionar prato pronta
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -50,6 +53,7 @@
         android:textSize="18sp"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="16dp" />
+<<<<<<< HEAD
 
     <TextView
         android:id="@+id/textView16"
@@ -61,5 +65,7 @@
         android:textSize="18sp"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="16dp" />
+=======
+>>>>>>> tela adicionar prato pronta
 
 </android.support.constraint.ConstraintLayout>

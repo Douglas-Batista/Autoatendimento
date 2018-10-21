@@ -28,9 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:text="Exemplo"
 =======
 >>>>>>> adicionar prato ao firebase correção
+=======
+>>>>>>> tela adicionar prato pronta
         android:layout_marginStart="64dp"
         android:layout_marginBottom="16dp"
         android:text="Selecionar imagem do prato"
