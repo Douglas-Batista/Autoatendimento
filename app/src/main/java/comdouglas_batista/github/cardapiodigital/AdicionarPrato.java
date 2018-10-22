@@ -101,8 +101,5 @@ public class AdicionarPrato extends Activity {
         databaseReference = firebaseDatabase.getReference();
     }
 
-
-
-
 }
 
