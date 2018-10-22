@@ -33,6 +33,7 @@ dependencies {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     implementation 'com.google.firebase:firebase-database:16.0.3'
 >>>>>>> adicionar prato ao firebase correção
@@ -45,5 +46,8 @@ dependencies {
 =======
     implementation 'com.google.firebase:firebase-database:16.0.3'
 >>>>>>> tela adicionar prato concluida
+=======
+    implementation 'com.google.firebase:firebase-database:16.0.3'
+>>>>>>> adicionar prato, pronto
 }
 apply plugin: 'com.google.gms.google-services'

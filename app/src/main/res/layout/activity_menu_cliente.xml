@@ -15,8 +15,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> tela adicionar prato concluida
+=======
+>>>>>>> adicionar prato, pronto
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -27,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Button
         android:id="@+id/btnExemplo"
@@ -65,6 +69,9 @@
 =======
 
 >>>>>>> tela adicionar prato concluida
+=======
+
+>>>>>>> adicionar prato, pronto
 
     <TextView
         android:id="@+id/textView16"
@@ -77,11 +84,14 @@
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="16dp" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> tela adicionar prato pronta
 =======
 >>>>>>> adicionar prato, pronto
 =======
 >>>>>>> tela adicionar prato concluida
+=======
+>>>>>>> adicionar prato, pronto
 
 </android.support.constraint.ConstraintLayout>

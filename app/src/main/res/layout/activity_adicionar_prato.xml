@@ -8,6 +8,7 @@
     tools:context=".AdicionarPrato">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EditText
 <<<<<<< HEAD
         android:id="@+id/NomeP"
@@ -20,10 +21,15 @@
 >>>>>>> tela adicionar prato pronta
 =======
 >>>>>>> adicionar prato, pronto
+=======
+    <EditText
+        android:id="@+id/numPrato"
+>>>>>>> adicionar prato, pronto
         android:layout_width="323dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,6 +52,11 @@
         android:background="#E3E3E3"
         android:ems="10"
 >>>>>>> adicionar prato, pronto
+=======
+        android:layout_marginBottom="28dp"
+        android:background="#E3E3E3"
+        android:ems="10"
+>>>>>>> adicionar prato, pronto
         android:hint="Preço"
         android:inputType="numberDecimal"
         android:textAlignment="center"
@@ -53,9 +64,12 @@
         app:layout_constraintBottom_toTopOf="@+id/nomePrato"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> adicionar prato ao firebase correção
 =======
 >>>>>>> tela adicionar prato pronta
+=======
+>>>>>>> adicionar prato, pronto
 =======
 >>>>>>> adicionar prato, pronto
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,6 +77,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,6 +182,8 @@
 =======
 >>>>>>> adicionar prato, pronto
 =======
+=======
+>>>>>>> adicionar prato, pronto
     <EditText
         android:id="@+id/nomePrato"
         android:layout_width="323dp"
@@ -204,7 +221,10 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
+<<<<<<< HEAD
 >>>>>>> tela adicionar prato concluida
+=======
+>>>>>>> adicionar prato, pronto
         android:id="@+id/ingredientesPrato"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -215,6 +235,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> adicionar prato ao firebase correção
 =======
 >>>>>>> tela adicionar prato pronta
@@ -222,12 +243,15 @@
 >>>>>>> adicionar prato, pronto
 =======
 >>>>>>> tela adicionar prato concluida
+=======
+>>>>>>> adicionar prato, pronto
         android:background="#E3E3E3"
         android:ems="10"
         android:hint="Ingrediente"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="12sp"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -245,6 +269,9 @@
 =======
         app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
 >>>>>>> tela adicionar prato concluida
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> adicionar prato, pronto
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -283,6 +310,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
 =======
         app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
@@ -296,6 +324,9 @@
 =======
         app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
 >>>>>>> tela adicionar prato concluida
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> adicionar prato, pronto
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"

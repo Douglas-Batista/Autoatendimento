@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:text="Exemplo"
 =======
 >>>>>>> adicionar prato ao firebase correção
@@ -40,6 +41,8 @@
 >>>>>>> adicionar prato, pronto
 =======
 >>>>>>> tela adicionar prato concluida
+=======
+>>>>>>> adicionar prato, pronto
         android:layout_marginStart="64dp"
         android:layout_marginBottom="16dp"
         android:text="Selecionar imagem do prato"
