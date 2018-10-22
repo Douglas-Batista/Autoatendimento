@@ -22,86 +22,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnAtua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-        android:text="Exemplo"
-=======
->>>>>>> adicionar prato ao firebase correção
-=======
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> tela adicionar prato concluida
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="16dp"
-        android:text="Selecionar imagem do prato"
-        app:layout_constraintBottom_toTopOf="@+id/numPrato"
-        app:layout_constraintStart_toStartOf="@+id/imagemPrato"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
-
-    <EditText
-        android:id="@+id/precoPrato"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="Preço"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imagemPrato"
-        android:layout_width="368dp"
-        android:layout_height="235dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/imagem_nao_cadastrada"
-        app:layout_constraintBottom_toTopOf="@+id/SelImagem"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textViewgerprt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
         android:fontFamily="@font/lato_bold"
         android:text="Gerenciar Pratos"
         android:textColor="#000000"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

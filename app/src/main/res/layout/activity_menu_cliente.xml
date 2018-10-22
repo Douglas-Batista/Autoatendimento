@@ -11,18 +11,6 @@
         android:id="@+id/toolbar7"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tela adicionar prato concluida
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> adicionar prato
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -33,60 +21,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
     <Button
         android:id="@+id/btnExemplo"
         android:layout_width="151dp"
         android:layout_height="149dp"
-=======
->>>>>>> adicionar prato ao firebase correção
-=======
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="#B86A56"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:layout_marginBottom="8dp"
+        android:text="Exemplo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Menu"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="16dp" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> tela adicionar prato concluida
-=======
-
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> adicionar prato
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView16"
@@ -98,22 +46,5 @@
         android:textSize="18sp"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="16dp" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> tela adicionar prato concluida
-=======
->>>>>>> adicionar prato, pronto
-=======
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
 
 </android.support.constraint.ConstraintLayout>

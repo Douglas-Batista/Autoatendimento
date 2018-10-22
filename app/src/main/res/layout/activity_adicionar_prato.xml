@@ -7,244 +7,25 @@
     android:background="#F0F0F0"
     tools:context=".AdicionarPrato">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <EditText
-<<<<<<< HEAD
-        android:id="@+id/NomeP"
-=======
-        android:id="@+id/numPrato"
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> adicionar prato ao firebase correção
-=======
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
     <EditText
         android:id="@+id/numPrato"
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         android:layout_width="323dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-        android:layout_marginBottom="24dp"
-        android:background="#E3E3E3"
-        android:ems="10"
-        android:hint="Nome do prato"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/IngredientesP"
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
         android:layout_marginBottom="28dp"
         android:background="#E3E3E3"
         android:ems="10"
-=======
-        android:layout_marginBottom="28dp"
-        android:background="#E3E3E3"
-        android:ems="10"
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-        android:layout_marginBottom="28dp"
-        android:background="#E3E3E3"
-        android:ems="10"
->>>>>>> adicionar prato
-=======
-        android:layout_marginBottom="28dp"
-        android:background="#E3E3E3"
-        android:ems="10"
-<<<<<<< HEAD
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         android:hint="Preço"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/nomePrato"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> adicionar prato ao firebase correção
-=======
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> adicionar prato ao firebase correção
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-    <Button
-        android:id="@+id/btnAddPedido"
-        android:layout_width="382dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="#B86A56"
-        android:text="Incluir Prato"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
-        app:layout_constraintVertical_bias="1.0" />
-
-=======
->>>>>>> tela adicionar prato concluida
-    <EditText
-        android:id="@+id/numPrato"
-        android:layout_width="323dp"
-        android:layout_height="25dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-=======
-    <EditText
-=======
-    <EditText
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
-    <EditText
->>>>>>> adicionar prato, pronto
-        android:id="@+id/nomePrato"
-        android:layout_width="323dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
-=======
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
->>>>>>> tela adicionar prato concluida
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
-    <EditText
->>>>>>> tela adicionar prato pronta
-        android:id="@+id/nomePrato"
-        android:layout_width="323dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
->>>>>>> adicionar prato
-        android:background="#E3E3E3"
-        android:ems="10"
-        android:hint="Nome do prato"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="12sp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
-=======
-        app:layout_constraintBottom_toTopOf="@+id/nomePrato"
->>>>>>> tela adicionar prato concluida
-=======
-        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
->>>>>>> adicionar prato
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-    <Button
-        android:id="@+id/btnAddPrato"
-        android:layout_width="382dp"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> adicionar prato ao firebase correção
-=======
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="#B86A56"
-        android:text="Incluir Prato"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:id="@+id/IngredientesP"
-        android:layout_width="323dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="331dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="71dp"
-=======
-=======
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
-=======
->>>>>>> adicionar prato, pronto
     <EditText
         android:id="@+id/nomePrato"
         android:layout_width="323dp"
@@ -282,15 +63,6 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-<<<<<<< HEAD
->>>>>>> tela adicionar prato concluida
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         android:id="@+id/ingredientesPrato"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -298,64 +70,13 @@
         android:layout_marginTop="331dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="79dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> adicionar prato ao firebase correção
-=======
->>>>>>> tela adicionar prato pronta
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> tela adicionar prato concluida
-=======
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> adicionar prato ao firebase correção
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         android:background="#E3E3E3"
         android:ems="10"
         android:hint="Ingrediente"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="12sp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
-=======
         app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> adicionar prato ao firebase correção
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> adicionar prato, pronto
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> tela adicionar prato concluida
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -390,37 +111,7 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="12sp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> adicionar prato
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
-=======
         app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> adicionar prato ao firebase correção
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
-<<<<<<< HEAD
->>>>>>> tela adicionar prato pronta
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> adicionar prato, pronto
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> tela adicionar prato concluida
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> adicionar prato, pronto
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
->>>>>>> tela adicionar prato pronta
->>>>>>> adicionar prato
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
