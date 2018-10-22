@@ -8,42 +8,6 @@
     tools:context=".AdicionarPrato">
 
     <EditText
-        android:id="@+id/NomeP"
-        android:layout_width="323dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
-        android:background="#E3E3E3"
-        android:ems="10"
-        android:hint="Nome do prato"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/IngredientesP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnAddPedido"
-        android:layout_width="382dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="#B86A56"
-        android:text="Incluir Prato"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
         android:id="@+id/numPrato"
         android:layout_width="323dp"
         android:layout_height="25dp"
@@ -56,29 +20,64 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/NomeP"
+        app:layout_constraintBottom_toTopOf="@+id/nomePrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/IngredientesP"
+        android:id="@+id/nomePrato"
         android:layout_width="323dp"
-        android:layout_height="0dp"
+        android:layout_height="25dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="331dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="71dp"
+        android:layout_marginBottom="24dp"
+        android:background="#E3E3E3"
+        android:ems="10"
+        android:hint="Nome do prato"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAddPrato"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="#B86A56"
+        android:text="Incluir Prato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/ingredientesPrato"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="79dp"
         android:background="#E3E3E3"
         android:ems="10"
         android:hint="Ingrediente"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -99,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imagemPrato" />
 
     <EditText
-        android:id="@+id/PrecoP"
+        android:id="@+id/precoPrato"
         android:layout_width="101dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
@@ -112,11 +111,11 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
         app:layout_constraintVertical_bias="0.633"
         tools:ignore="MissingConstraints" />
 
@@ -157,7 +156,7 @@
         android:text="Nome do Prato:"
         android:textColor="#000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/NomeP"
+        app:layout_constraintBottom_toTopOf="@+id/nomePrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent" />
@@ -172,11 +171,11 @@
         android:text="Ingredientes:"
         android:textColor="#000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/IngredientesP"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NomeP" />
+        app:layout_constraintTop_toBottomOf="@+id/nomePrato" />
 
     <TextView
         android:id="@+id/textView6"
@@ -188,11 +187,11 @@
         android:text="Valor:"
         android:textColor="#000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/PrecoP"
+        app:layout_constraintBottom_toTopOf="@+id/precoPrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
         app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>

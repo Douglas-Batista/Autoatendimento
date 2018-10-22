@@ -30,7 +30,6 @@
         android:text="Exemplo"
         android:layout_marginStart="64dp"
         android:layout_marginBottom="16dp"
-        android:text="Selecionar imagem do prato"
         app:layout_constraintBottom_toTopOf="@+id/numPrato"
         app:layout_constraintStart_toStartOf="@+id/imagemPrato"
         app:layout_constraintTop_toTopOf="parent"
