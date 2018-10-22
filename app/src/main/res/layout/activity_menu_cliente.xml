@@ -16,10 +16,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> tela adicionar prato concluida
 =======
 >>>>>>> adicionar prato, pronto
+=======
+>>>>>>> adicionar prato
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -32,6 +35,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> adicionar prato
     <Button
         android:id="@+id/btnExemplo"
         android:layout_width="151dp"
@@ -39,9 +45,15 @@
 =======
 >>>>>>> adicionar prato ao firebase correção
 =======
+<<<<<<< HEAD
 >>>>>>> tela adicionar prato pronta
 =======
 >>>>>>> adicionar prato, pronto
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
+>>>>>>> adicionar prato
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -66,12 +78,15 @@
         tools:layout_editor_absoluteY="16dp" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> tela adicionar prato concluida
 =======
 
 >>>>>>> adicionar prato, pronto
+=======
+>>>>>>> adicionar prato
 
     <TextView
         android:id="@+id/textView16"
@@ -85,6 +100,7 @@
         tools:layout_editor_absoluteY="16dp" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> tela adicionar prato pronta
 =======
@@ -93,5 +109,11 @@
 >>>>>>> tela adicionar prato concluida
 =======
 >>>>>>> adicionar prato, pronto
+=======
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
+>>>>>>> adicionar prato
 
 </android.support.constraint.ConstraintLayout>
