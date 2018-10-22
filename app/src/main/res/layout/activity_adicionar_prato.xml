@@ -4,14 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F0F0"
     tools:context=".AdicionarPrato">
 
     <EditText
+<<<<<<< HEAD
         android:id="@+id/NomeP"
+=======
+        android:id="@+id/numPrato"
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> adicionar prato ao firebase correção
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
         android:layout_width="323dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginBottom="24dp"
         android:background="#E3E3E3"
         android:ems="10"
@@ -20,11 +34,37 @@
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/IngredientesP"
+=======
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+        android:layout_marginBottom="28dp"
+        android:background="#E3E3E3"
+        android:ems="10"
+=======
+        android:layout_marginBottom="28dp"
+        android:background="#E3E3E3"
+        android:ems="10"
+>>>>>>> tela adicionar prato pronta
+        android:hint="Preço"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/nomePrato"
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> adicionar prato ao firebase correção
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     <Button
         android:id="@+id/btnAddPedido"
         android:layout_width="382dp"
@@ -46,22 +86,60 @@
         android:id="@+id/numPrato"
         android:layout_width="323dp"
         android:layout_height="25dp"
+=======
+    <EditText
+=======
+    <EditText
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+    <EditText
+>>>>>>> tela adicionar prato pronta
+        android:id="@+id/nomePrato"
+        android:layout_width="323dp"
+        android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="24dp"
         android:background="#E3E3E3"
         android:ems="10"
-        android:hint="Preço"
-        android:inputType="numberDecimal"
+        android:hint="Nome do prato"
+        android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/NomeP"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/btnAddPrato"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> adicionar prato ao firebase correção
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="#B86A56"
+        android:text="Incluir Prato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
+        app:layout_constraintVertical_bias="1.0" />
+
     <EditText
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         android:id="@+id/IngredientesP"
         android:layout_width="323dp"
         android:layout_height="0dp"
@@ -69,15 +147,45 @@
         android:layout_marginTop="331dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="71dp"
+=======
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
+        android:id="@+id/ingredientesPrato"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="79dp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> adicionar prato ao firebase correção
+=======
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+>>>>>>> tela adicionar prato pronta
         android:background="#E3E3E3"
         android:ems="10"
         android:hint="Ingrediente"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textSize="12sp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> adicionar prato ao firebase correção
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> tela adicionar prato pronta
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -98,7 +206,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imagemPrato" />
 
     <EditText
-        android:id="@+id/PrecoP"
+        android:id="@+id/precoPrato"
         android:layout_width="101dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
@@ -111,11 +219,23 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="12sp"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/btnAddPedido"
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> adicionar prato ao firebase correção
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
+=======
+        app:layout_constraintBottom_toTopOf="@+id/btnAddPrato"
+>>>>>>> tela adicionar prato pronta
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
         app:layout_constraintVertical_bias="0.633"
         tools:ignore="MissingConstraints" />
 
@@ -156,7 +276,7 @@
         android:text="Nome do Prato:"
         android:textColor="#000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/NomeP"
+        app:layout_constraintBottom_toTopOf="@+id/nomePrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent" />
@@ -171,11 +291,11 @@
         android:text="Ingredientes:"
         android:textColor="#000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/IngredientesP"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientesPrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NomeP" />
+        app:layout_constraintTop_toBottomOf="@+id/nomePrato" />
 
     <TextView
         android:id="@+id/textView6"
@@ -187,11 +307,11 @@
         android:text="Valor:"
         android:textColor="#000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/PrecoP"
+        app:layout_constraintBottom_toTopOf="@+id/precoPrato"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesPrato"
         app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
