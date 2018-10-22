@@ -9,12 +9,13 @@
 
     <Button
         android:id="@+id/excluirMesa2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="50dp"
+        android:background="#B86A56"
         android:fontFamily="@font/lato_bold"
         android:text="Excluir"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +23,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/atualizarMesa"
         app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/atualizarMesa"
@@ -30,13 +31,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="9dp"
         android:layout_marginBottom="50dp"
+        android:background="#B86A56"
         android:fontFamily="@font/lato_bold"
         android:text="Atualizar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/excluirMesa2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IngredientesP"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/NomeP"
