@@ -8,18 +8,18 @@ import android.widget.Button;
 
 public class Administrador extends Activity {
 
-    private Button fila;
-    private Button mesa;
-    private Button pratos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrador);
 
-        fila = (Button) findViewById(R.id.btnFila);
-        mesa = (Button) findViewById(R.id.btnMesa);
-        pratos = (Button) findViewById(R.id.btnPratos);
+
+        Button fila = (Button) findViewById(R.id.btnFila);
+        Button mesa = (Button) findViewById(R.id.btnMesa);
+        Button pratos = (Button) findViewById(R.id.btnEditPratos);
+        Button addpratos = (Button) findViewById(R.id.btnAddPrato);
+
 
         fila.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +42,15 @@ public class Administrador extends Activity {
             public void onClick(View v) {
                 Intent gemPratos = new Intent(Administrador.this, GerenciarPratos.class);
                 startActivity(gemPratos);
+            }
+        });
+
+        addpratos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent adicionarPrato = new Intent(Administrador.this, AdicionarPrato.class);
+                startActivity(adicionarPrato);
+
             }
         });
     }

@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="comdouglas_batista.github.cardapiodigital">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icone_cardapio"
@@ -22,7 +27,14 @@
         <activity android:name=".FilaDePedidos" />
         <activity android:name=".AdministrarMesas" />
         <activity android:name=".GerenciarPratos" />
-        <activity android:name=".Administrador"></activity>
+        <activity android:name=".Administrador" />
+        <activity android:name=".AdicionarPrato"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
     </application>
 
 </manifest>
