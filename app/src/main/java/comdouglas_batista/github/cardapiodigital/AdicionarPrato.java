@@ -52,8 +52,6 @@ public class AdicionarPrato extends Activity {
 
                 if(numero.getText().toString().isEmpty()||nome.getText().toString().isEmpty()||
                         preco.getText().toString().isEmpty()||ingrediente.getText().toString().isEmpty()){
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                     Toast.makeText(getApplicationContext(),"Preencha todos os campos",Toast.LENGTH_LONG).show();
 
@@ -73,32 +71,6 @@ public class AdicionarPrato extends Activity {
         });
 
 
-=======
-=======
->>>>>>> tela adicionar prato pronta
-
-                    Toast.makeText(getApplicationContext(),"Preencha todos os campos",Toast.LENGTH_LONG).show();
-
-                } else {
-
-                    databaseReference.child("Prato").child(prato.getNumeroPrato()).setValue(prato);
-                    limparCampos();
-                }
-            }
-
-            private void limparCampos() {
-                numero.setText("");
-                nome.setText("");
-                preco.setText("");
-                ingrediente.setText("");
-            }
-        });
-
-
-<<<<<<< HEAD
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
         //pega imagem na galeria
         pegaimagem.setOnClickListener(new View.OnClickListener() {
 
@@ -129,17 +101,5 @@ public class AdicionarPrato extends Activity {
         databaseReference = firebaseDatabase.getReference();
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
-
-
-
->>>>>>> tela adicionar prato pronta
 }
 

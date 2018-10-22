@@ -11,9 +11,6 @@
         android:id="@+id/toolbar7"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="#B86A56"
@@ -27,51 +24,31 @@
     <Button
         android:id="@+id/btnExemplo"
         android:layout_width="151dp"
-        android:layout_height="149dp"
-=======
->>>>>>> adicionar prato ao firebase correção
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="#B86A56"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:layout_marginBottom="209dp"
+        android:text="Exemplo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="168dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Menu"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnExemplo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Menu"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="16dp" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Menu"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="16dp" />
-=======
->>>>>>> 2b1acf2f85c296a272f4d81d93450194c014926e
-=======
->>>>>>> tela adicionar prato pronta
 
 </android.support.constraint.ConstraintLayout>
