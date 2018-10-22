@@ -16,6 +16,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.UUID;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
 
 public class AdicionarPrato extends Activity {
 
@@ -32,6 +36,7 @@ public class AdicionarPrato extends Activity {
 
         imagem = (ImageView) findViewById(R.id.imagemPrato);
         Button pegaimagem = (Button) findViewById(R.id.SelImagem);
+
         numero = (EditText) findViewById(R.id.numPrato);
         nome = (EditText) findViewById(R.id.nomePrato);
         ingrediente = (EditText) findViewById(R.id.ingredientesPrato);
@@ -72,6 +77,7 @@ public class AdicionarPrato extends Activity {
 
 
         //pega imagem na galeria
+
         pegaimagem.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -84,6 +90,7 @@ public class AdicionarPrato extends Activity {
                 startActivityForResult(i, IMAGEM_PEGA);
             }
         });
+
     }
 
     //coloca a imagem no image view
