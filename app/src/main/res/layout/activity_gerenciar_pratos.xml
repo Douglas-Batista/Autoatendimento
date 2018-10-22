@@ -4,17 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F0F0"
     tools:context=".GerenciarPratos">
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#B86A56"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnAtua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="Exemplo"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="242dp"
         android:layout_marginBottom="16dp"
-        android:text="Selecionar imagem do prato"
         app:layout_constraintBottom_toTopOf="@+id/numPrato"
         app:layout_constraintStart_toStartOf="@+id/imagemPrato"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,4 +68,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewgerprt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Gerenciar Pratos"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="16dp" />
 </android.support.constraint.ConstraintLayout>
