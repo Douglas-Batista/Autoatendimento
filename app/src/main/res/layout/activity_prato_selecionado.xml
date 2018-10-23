@@ -21,6 +21,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textinfoprt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Informações do Prato"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imagenull"
         android:layout_width="0dp"
@@ -107,11 +125,12 @@
 
     <Button
         android:id="@+id/incluir"
-        android:layout_width="0dp"
+        android:layout_width="104dp"
         android:layout_height="37dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:fontFamily="@font/ubuntu"
+        android:background="#B86A56"
+        android:fontFamily="@font/lato_bold"
         android:text="Incluir pedido"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/observação"
@@ -139,15 +158,5 @@
         android:text="0,00"
         app:layout_constraintBottom_toTopOf="@+id/incluir"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textinfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informações do Prato"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp" />
 
 </android.support.constraint.ConstraintLayout>
