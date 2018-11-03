@@ -8,12 +8,10 @@ import android.widget.Button;
 
 public class Administrador extends Activity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrador);
-
 
         Button fila = (Button) findViewById(R.id.btnFila);
         Button mesa = (Button) findViewById(R.id.btnMesa);

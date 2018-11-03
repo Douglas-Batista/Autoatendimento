@@ -62,7 +62,7 @@ public class AtualizaExclui extends Activity {
                 prato.setNumeroPrato(numero.getText().toString());
                 prato.setNomePrato(nome.getText().toString());
                 prato.setPrecoPrato(preco.getText().toString());
-                prato.setIngrdientesPrato(ingrediente.getText().toString());
+                prato.setIngredientesPrato(ingrediente.getText().toString());
                 //prato.setImagemPrato(imagem.getImage().toString());
 
                 if(nome.getText().toString().isEmpty()||
@@ -88,13 +88,13 @@ public class AtualizaExclui extends Activity {
                 prato.setNumeroPrato(numero.getText().toString());
                 prato.setNomePrato(nome.getText().toString());
                 prato.setPrecoPrato(preco.getText().toString());
-                prato.setIngrdientesPrato(ingrediente.getText().toString());
+                prato.setIngredientesPrato(ingrediente.getText().toString());
                 //prato.setImagemPrato(imagem.getImage().toString());
 
                 prato.setNumeroPrato(numero.getText().toString());
                 databaseReference.child("Prato").child(prato.getNumeroPrato()).removeValue();
                 Toast.makeText(getApplicationContext(),"Prato excluido",Toast.LENGTH_LONG).show();
-
+                finish();
 
             }
         });

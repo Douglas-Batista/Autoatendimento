@@ -7,9 +7,10 @@ public class Modelo {
 
     private String NumeroPrato;
     private String NomePrato;
-    private String IngrdientesPrato;
+    private String IngredientesPrato;
     private String PrecoPrato;
-    private Image ImagemPrato;
+    private String ImagemPrato;
+    private String ImagemURL;
 
     public Modelo() {
     }
@@ -30,12 +31,12 @@ public class Modelo {
         NomePrato = nomePrato;
     }
 
-    public String getIngrdientesPrato() {
-        return IngrdientesPrato;
+    public String getIngredientesPrato() {
+        return IngredientesPrato;
     }
 
-    public void setIngrdientesPrato(String ingrdientesPrato) {
-        IngrdientesPrato = ingrdientesPrato;
+    public void setIngredientesPrato(String ingredientesPrato) {
+        IngredientesPrato = ingredientesPrato;
     }
 
     public String getPrecoPrato() {
@@ -46,18 +47,24 @@ public class Modelo {
         PrecoPrato = precoPrato;
     }
 
-    public Image getImagemPrato() {
+    public String getImagemPrato() {
         return ImagemPrato;
     }
 
-    public void setImagemPrato(Image imagemPrato) {
+    public void setImagemPrato(String imagemPrato) {
         ImagemPrato = imagemPrato;
+    }
+
+    public String getImagemURL() {
+        return ImagemURL;
+    }
+
+    public void setImagemURL(String imagemURL) {
+        ImagemURL = imagemURL;
     }
 
     @Override
     public String toString() {
-        return "Modelo{" +
-                "NomePrato='" + NomePrato + '\'' +
-                '}';
+        return  NomePrato;
     }
 }

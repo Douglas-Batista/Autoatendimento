@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="comdouglas_batista.github.cardapiodigital">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -27,14 +26,15 @@
         <activity android:name=".FilaDePedidos" />
         <activity android:name=".AdministrarMesas" />
         <activity android:name=".GerenciarPratos" />
-        <activity android:name=".Administrador" />
-        <activity android:name=".AdicionarPrato"></activity>
+        <activity android:name=".AtualizaExclui" />
+        <activity android:name=".PedidosCliente" />
+        <activity android:name=".AdicionarPrato" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
+        <activity android:name=".Administrador"></activity>
     </application>
 
 </manifest>
