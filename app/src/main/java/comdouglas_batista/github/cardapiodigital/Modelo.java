@@ -65,6 +65,6 @@ public class Modelo {
 
     @Override
     public String toString() {
-        return  NomePrato;
+        return  NomePrato + PrecoPrato + ImagemURL;
     }
 }

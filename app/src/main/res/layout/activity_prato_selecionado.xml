@@ -116,7 +116,7 @@
         android:ems="10"
         android:fontFamily="@font/ubuntu"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/preço"
+        app:layout_constraintBottom_toTopOf="@+id/preco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/observação"
@@ -146,10 +146,10 @@
         android:text="R$"
         android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toTopOf="@+id/incluir"
-        app:layout_constraintEnd_toStartOf="@+id/preço" />
+        app:layout_constraintEnd_toStartOf="@+id/preco" />
 
     <TextView
-        android:id="@+id/preço"
+        android:id="@+id/preco"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"

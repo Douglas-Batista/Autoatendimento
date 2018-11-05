@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SelImagem"
+        app:layout_constraintTop_toBottomOf="@+id/atualizaImagem"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -50,7 +50,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/SelImagem"
+        android:id="@+id/atualizaImagem"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -79,13 +79,13 @@
 
     <ImageView
         android:id="@+id/atualizaImagemPrato"
-        android:layout_width="0dp"
+        android:layout_width="286dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/SelImagem"
+        app:layout_constraintBottom_toTopOf="@+id/atualizaImagem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,6 +173,14 @@
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
