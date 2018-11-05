@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
@@ -20,39 +22,32 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GerenciarPratos extends Activity {
+public class GerenciarPratos extends Activity{
 
-    ListView listaPratos;
-    private List<Modelo> listaPrato = new ArrayList<>();
+    private RecyclerView listaPrat;
+    private AdapterLista AdapterLista;
     private ArrayAdapter<Modelo> arrayPratos;
+    private List<Modelo> listaPrato;
+
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    Modelo pratoSelecionado;
 
+    Modelo pratoSelecionado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gerenciar_pratos);
-        listaPratos = (ListView) findViewById(R.id.listaPratos);
+
+        listaPrat = findViewById(R.id.RecyclePratos);
+        listaPrat.setHasFixedSize(true);
+        listaPrat.setLayoutManager(new LinearLayoutManager(this));
+
+        listaPrato = new ArrayList<>();
 
         iniciaFirebase();
         pegaPratosDatabase();
 
-        listaPratos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                pratoSelecionado = (Modelo) parent.getItemAtPosition(position);
-
-                Bundle dados = new Bundle();
-                dados.putString("nome", pratoSelecionado.getNomePrato());
-                dados.putString("numero", pratoSelecionado.getNumeroPrato());
-                dados.putString("ingredientes", pratoSelecionado.getIngredientesPrato());
-                dados.putString("preco", pratoSelecionado.getPrecoPrato());
-                Intent intent = new Intent(GerenciarPratos.this, AtualizaExclui.class);
-                intent.putExtras(dados);
-                startActivity(intent);
-            }
-        });
     }
 
     private void pegaPratosDatabase() {
@@ -66,8 +61,8 @@ public class GerenciarPratos extends Activity {
                     listaPrato.add(prato);
                 }
 
-                arrayPratos = new ArrayAdapter<Modelo>(GerenciarPratos.this,android.R.layout.simple_list_item_1,listaPrato);
-                listaPratos.setAdapter(arrayPratos);
+                AdapterLista = new AdapterLista(GerenciarPratos.this, listaPrato);
+                listaPrat.setAdapter(AdapterLista);
             }
 
             @Override
@@ -84,4 +79,5 @@ public class GerenciarPratos extends Activity {
         databaseReference = firebaseDatabase.getReference();
 
     }
+
 }

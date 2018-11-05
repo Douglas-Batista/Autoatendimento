@@ -5,7 +5,6 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
@@ -13,17 +12,11 @@ import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
-import com.google.firebase.storage.internal.Sleeper;
 import com.squareup.picasso.Picasso;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
@@ -31,12 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
-
-import javax.xml.transform.Result;
-
 
 public class AdicionarPrato extends Activity {
 
@@ -73,9 +61,6 @@ public class AdicionarPrato extends Activity {
             @Override
             public void onClick(View v) {
 
-
-                //prato.setImagemPrato(nomeFoto.getText().toString());
-
                 if(numero.getText().toString().isEmpty()||nome.getText().toString().isEmpty()||
                         preco.getText().toString().isEmpty()||ingrediente.getText().toString().isEmpty()) {
 
@@ -86,8 +71,10 @@ public class AdicionarPrato extends Activity {
                     Toast.makeText(getApplicationContext(),"Selecione uma imagem",Toast.LENGTH_LONG).show();
 
                 } else {
-                    storageReference.child(nome.getText().toString()+"."+pegarExtensão(imagem));
-                    storageReference.putFile(imagem).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                    //storageReference;
+                    storageReference = FirebaseStorage.getInstance().getReference().child(nome.getText()+".jpg");
+                    storageReference.putFile(imagem)
+                            .continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                         @Override
                         public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
                             if (!task.isSuccessful()){
@@ -114,13 +101,10 @@ public class AdicionarPrato extends Activity {
                                 databaseReference.child("Prato").child(prato.getNumeroPrato()).setValue(prato);
                                 limparCampos();
                             }
-
                         }
                     });
-
                 }
-
-                }
+            }
 
             private void limparCampos() {
                 numero.setText("");
@@ -151,17 +135,9 @@ public class AdicionarPrato extends Activity {
         }
     }
 
-    private String pegarExtensão (Uri uri){
-        ContentResolver contentR = getContentResolver();
-        MimeTypeMap mime = MimeTypeMap.getSingleton();
-        return  mime.getExtensionFromMimeType(contentR.getType(uri));
-    }
-
     private void iniciarFirebase() {
         FirebaseApp.initializeApp(AdicionarPrato.this);
-        storageReference = FirebaseStorage.getInstance().getReference("Prato");
+
         databaseReference = FirebaseDatabase.getInstance().getReference();
     }
-
 }
-
