@@ -60,7 +60,7 @@ public class AtualizaExclui extends Activity {
                 String precos = dados.getString("preco");
                 String imagems = dados.getString("imagem");
 
-                image = (TextView) findViewById(R.id.textView2);
+                image = (TextView) findViewById(R.id.gabiarra2);
                 nome = (EditText) findViewById(R.id.txenomePrato);
                 ingrediente = (EditText) findViewById(R.id.txeNomeIngredientesPrato);
                 preco = (EditText) findViewById(R.id.txePrecoPrato);
@@ -92,7 +92,8 @@ public class AtualizaExclui extends Activity {
         Button atualizarPrato = (Button) findViewById(R.id.atualizarPrato);
         Button excluirPrato = (Button) findViewById(R.id.excluirPrato);
 
-        iniciaFirebase();
+        iniciaFireDatabase();
+        iniciaFireStorage();
 
         atualizarPrato.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +104,7 @@ public class AtualizaExclui extends Activity {
                 prato.setNomePrato(nome.getText().toString());
                 prato.setPrecoPrato(preco.getText().toString());
                 prato.setIngredientesPrato(ingrediente.getText().toString());
+                prato.setImagemURL(image.getText().toString());
 
                 if(nome.getText().toString().isEmpty()||
                         preco.getText().toString().isEmpty()||numero.getText().toString().isEmpty()||ingrediente.getText().toString().isEmpty()){
@@ -112,7 +114,6 @@ public class AtualizaExclui extends Activity {
                 } else {
                     Toast.makeText(getApplicationContext(),"Prato atualizado",Toast.LENGTH_LONG).show();
                     databaseReference.child("Prato").child(prato.getNumeroPrato()).setValue(prato);
-
                     finish();
                 }
             }
@@ -135,6 +136,8 @@ public class AtualizaExclui extends Activity {
         });
     }
 
+
+
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode== IMAGEM_PEGA  && resultCode == RESULT_OK) {
             Uri imagem = data.getData();
@@ -148,11 +151,16 @@ public class AtualizaExclui extends Activity {
         return  mime.getExtensionFromMimeType(contentR.getType(uri));
     }
 
-    private void iniciaFirebase() {
+    private void iniciaFireStorage() {
         FirebaseApp.initializeApp(AtualizaExclui.this);
         firebaseStorage = FirebaseStorage.getInstance();
         storageReference = firebaseStorage.getReference();
+    }
+
+    private void iniciaFireDatabase() {
+        FirebaseApp.initializeApp(AtualizaExclui.this);
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
+
 }
