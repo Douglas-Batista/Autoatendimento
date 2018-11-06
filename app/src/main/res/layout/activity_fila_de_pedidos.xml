@@ -10,10 +10,8 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbarfp"
-        android:layout_width="385dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:background="#B86A56"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"

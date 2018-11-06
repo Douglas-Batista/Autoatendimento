@@ -14,27 +14,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Inicio">
+
+        <activity android:name=".Inicio"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cliente" />
-        <activity android:name=".Prato" />
-        <activity android:name=".FilaDePedidos" />
-        <activity android:name=".AdministrarMesas" />
-        <activity android:name=".GerenciarPratos" />
-        <activity android:name=".AtualizaExclui" />
-        <activity android:name=".PedidosCliente" />
-        <activity android:name=".AdicionarPrato" />
+
+        <activity android:name=".Cliente"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Prato"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FilaDePedidos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AdministrarMesas"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GerenciarPratos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AtualizaExclui"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PedidosCliente"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AdicionarPrato"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Administrador"
+            android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".Administrador"></activity>
     </application>
 
 </manifest>
