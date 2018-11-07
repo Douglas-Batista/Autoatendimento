@@ -11,37 +11,36 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
-
 import java.util.List;
 
-public class AdapterLista extends RecyclerView.Adapter<AdapterLista.ImagemHolder> {
-
-    private OnItemClickListener liste;
+public class AdapterGrid extends RecyclerView.Adapter<AdapterGrid.ImagemHolder>{
+    private AdapterLista.OnItemClickListener liste;
     private Context mContext;
     private List<Modelo> mUpload;
 
-    public AdapterLista(Context context, List<Modelo> uploads){
+    public AdapterGrid(Context context, List<Modelo> uploads){
         mContext = context;
         mUpload = uploads;
     }
 
     @NonNull
     @Override
-    public ImagemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.modelo_linha_lista, parent,false);
-        return new ImagemHolder(v);
+    public AdapterGrid.ImagemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.modelo_grid_menu, parent,false);
+        return new AdapterGrid.ImagemHolder(v);
     }
 
+
     @Override
-    public void onBindViewHolder(@NonNull ImagemHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AdapterGrid.ImagemHolder holder, int position) {
         Modelo modelo = mUpload.get(position);
-        holder.textNome.setText(modelo.getNomePrato());
-        holder.textPreco.setText(modelo.getPrecoPrato());
+        holder.txvNomeP.setText(modelo.getNomePrato());
+        holder.txvpreco.setText(modelo.getPrecoPrato());
         Picasso.get()
                 .load(modelo.getImagemURL())
                 .placeholder(R.mipmap.ic_launcher)
                 .fit()
-                .into(holder.imagePrato);
+                .into(holder.ImvPrato);
     }
 
     @Override
@@ -50,22 +49,21 @@ public class AdapterLista extends RecyclerView.Adapter<AdapterLista.ImagemHolder
     }
 
     public class ImagemHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView textNome;
-        TextView textPreco;
-        ImageView imagePrato;
+        TextView txvNomeP;
+        TextView txvpreco;
+        ImageView ImvPrato;
 
         ImagemHolder(View itemView) {
             super(itemView);
 
-            textNome = itemView.findViewById(R.id.textnump);
-            textPreco = itemView.findViewById(R.id.recebePreco);
-            imagePrato = itemView.findViewById(R.id.imagep1);
+            txvNomeP = itemView.findViewById(R.id.txvNomeP);
+            txvpreco = itemView.findViewById(R.id.TxvRecebePreco);
+            ImvPrato = itemView.findViewById(R.id.ImvPrato);
 
             itemView.setOnClickListener(new View.OnClickListener(){
-
                 @Override
                 public void onClick(View itemView) {
-                    Intent intent = new Intent(itemView.getContext(), AtualizaExclui.class);
+                    Intent intent = new Intent(itemView.getContext(), Prato.class);
 
                     int position = getAdapterPosition();
                     if(position != RecyclerView.NO_POSITION) {
@@ -94,8 +92,5 @@ public class AdapterLista extends RecyclerView.Adapter<AdapterLista.ImagemHolder
             }
         }
     }
-
-    public interface OnItemClickListener{
-        void onItemClick(int position);
-    }
 }
+
