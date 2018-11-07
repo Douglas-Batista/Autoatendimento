@@ -3,4 +3,5 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#e3e3e3</color>
+    <color name="corTxvPrato">#73000000</color>
 </resources>

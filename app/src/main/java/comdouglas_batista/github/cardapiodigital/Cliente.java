@@ -1,27 +1,75 @@
 package comdouglas_batista.github.cardapiodigital;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.widget.ArrayAdapter;
+
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cliente extends Activity {
 
-    private Button exemplo;
+    private RecyclerView gridPrat;
+    private AdapterGrid AdapterGrid;
+    private ArrayAdapter<Modelo> arrayPratos;
+    private List<Modelo> listaPrato;
+
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_cliente);
 
-        exemplo = (Button) findViewById(R.id.btnExemplo);
+        gridPrat = findViewById(R.id.recyclerCliente);
+        gridPrat.setHasFixedSize(true);
+        gridPrat.setLayoutManager(new LinearLayoutManager(this));
 
-        exemplo.setOnClickListener(new View.OnClickListener() {
+        listaPrato = new ArrayList<>();
+
+        iniciaFirebase();
+        pegaPratosDatabase();
+
+    }
+
+    private void pegaPratosDatabase() {
+        databaseReference.child("Prato").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View v) {
-                Intent entPrato = new Intent(Cliente.this, Prato.class);
-                startActivity(entPrato);
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                listaPrato.clear();
+                for (DataSnapshot objeto : dataSnapshot.getChildren()) {
+                    Modelo prato = objeto.getValue(Modelo.class);
+                    listaPrato.add(prato);
+                }
+
+                AdapterGrid = new AdapterGrid(Cliente.this, listaPrato);
+                gridPrat.setAdapter(AdapterGrid);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }
+
+    private void iniciaFirebase() {
+
+        FirebaseApp.initializeApp(Cliente.this);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference();
+
+    }
+
 }
